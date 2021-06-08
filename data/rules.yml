@@ -1,0 +1,14 @@
+version: "2.0"
+
+rules:
+
+- rule: Decir respuesta saludo despues de saludar
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+
+- rule: Decir respuesta saludo despues de despedir
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+

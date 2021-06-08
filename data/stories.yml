@@ -1,0 +1,38 @@
+version: "2.0"
+
+stories:
+
+- story: informacion producto
+  steps:
+  - intent: informacion
+  - action: action_productos
+
+- story: informacion comprar
+  steps:
+  - intent: compra
+  - action: utter_compra
+  - intent: afirmacion
+  - action: utter_compra_asesoria
+  - action: utter_compra_efectiva
+
+- story: compra directa
+  steps:
+  - intent: compra
+  - action: utter_compra
+  - intent: negacion
+  - action: utter_compra_efectiva
+
+- story: informacion empaque
+  steps:
+  - intent: empaque
+  - action: utter_empaque
+
+- story: domicilio
+  steps:
+  - intent: domicilio
+  - action: utter_domicilio
+
+- story: recomendacion
+  steps:
+  - intent: recomendacion
+  - action: utter_recomendacion

@@ -1,0 +1,54 @@
+version: "2.0"
+
+intents:
+  - saludo
+  - despedida
+  - afirmacion
+  - negacion
+  - compra
+  - informacion
+  - empaque
+  - domicilio
+
+actions:
+  - action_productos
+
+responses:
+  utter_saludo:
+  - text: "hola, ¿en que te puedo ayudar?"
+
+  utter_informacion:
+  - text: "Para informacion de nuestros productos visita www.vinos.com/productos"
+
+  utter_compra:
+  - text: "¿desea asesoría para la compra del vino?"
+
+  utter_compra_asesoria:
+  - text: "A continuación, algunos consejos para la selección del vino:
+          Comidas saladas: combinan con vinos dulces.
+          Comidas dulces: se complementan mejor con los vinos blancos dulces.
+          Carnes: las blancas maridan mejor con los vinos blancos, mientras que las rojas tienden a maridar mejor con los vinos tintos.
+          Vegetales: maridan bien con vinos blancos intensos y vinos tintos suaves."
+
+  utter_compra_efectiva:
+  - text: "Para relizar la compra de nuestros productos visita  www.vinos.com/compra"
+
+  utter_empaque:
+  - text: "se venden en media botella, tres cuartos, litro y medio y cinco litros"
+
+  utter_domicilio:
+  - text: "Para el envio de nuestros productos ofrecemos cajas de madera con las botellas compradas individualmente
+          (los tipos de cajas disponibles son de 1, 2, 3, 4 y 6 botellas), tenemos servicio a domicilio y despacho en una de nuestras tiendas"
+
+  utter_despedida:
+  - text: "espero haber podido ayudar, adios"
+
+  utter_recomendacion:
+  - text: "El vino blanco acompaña al pescado y las carnes blancas,
+          El champagne para acompañar ostras y el caviar,
+          Un vino dulce es perfecto con los postres,
+          Y para carnes rojas un vino tinto"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

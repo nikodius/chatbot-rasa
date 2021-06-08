@@ -1,0 +1,100 @@
+version: "2.0"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola 
+    - buenos dias 
+    - buenas tardes
+    - buenas noches
+    - saludos
+    - holi
+    - buenas
+
+- intent: despedida
+  examples: |
+    - adios
+    - hasta luego
+    - hasta pronto
+    - nos vemos pronto
+    - chao
+    - gracias
+
+- intent: afirmacion
+  examples: |
+    - si
+    - por supuesto
+    - suena bien
+    - correcto
+    - asi es
+    - sip
+    - sin duda
+    - ok
+    - afirmativo
+    - si claro
+
+- intent: negacion
+  examples: |
+    - no
+    - nunca
+    - no haria eso
+    - no me gusta
+    - ni modo
+    - no realmente
+    - jamás
+
+- intent: compra
+  examples: |
+    - comprar
+    - adquirir
+    - conseguir
+    - mercar
+    - comerciar
+    - regalar
+    - obtener
+    - pedir
+
+- intent: informacion
+  examples: |
+    - informacion
+    - aclaracion
+    - indicar
+    - mencionar
+    - informar
+    - indagar
+    - averiguar
+    - productos
+    - vinos
+    - marcas
+
+- intent: empaque
+  examples: |
+    - empaque 
+    - empaques
+    - formato
+    - como viene
+    - presentacion
+    - tipo
+    - embalaje
+
+- intent: domicilio
+  examples: |
+    - enviar 
+    - domicilio
+    - despachar
+    - mandar
+    - destinar
+    - remmitir
+    - emitir
+    - llevar
+
+- intent: recomendacion
+  examples: |
+    - recomienda 
+    - recomiendas
+    - que tipo
+    - algun tipo
+    - recomendacion
+    - Sugiere
+    - Sugieres
+    - Sugerencia
